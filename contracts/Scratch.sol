@@ -6,9 +6,11 @@ contract Zydecoin {
 
 contract Scratch {
 
+    address public creator;
     Zydecoin public zydecoin;
 
     function Scratch(address _coinAddress) public {
+        creator = msg.sender;
         zydecoin = Zydecoin(_coinAddress);
     }
 

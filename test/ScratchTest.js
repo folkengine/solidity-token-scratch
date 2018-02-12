@@ -25,5 +25,21 @@ contract('Scratch', function ([owner, actor]) {
             const balance = await this.token.balanceOf(actor);
             assert.equal(balance, amount);
         });
+
+        describe('Light up Scratchie', function() {
+
+            before(async function () {
+                this.scratch = await Scratch.new(this.token.address, { from: owner });
+            });
+
+            it('verify that a pledge throws an error if they do not have the scratch', async function () {
+
+            });
+
+            it('actor is the owner of the action', async function() {
+                const creator = await this.scratch.creator();
+                creator.should.be.equal(owner);
+            });
+        })
     });
 });
