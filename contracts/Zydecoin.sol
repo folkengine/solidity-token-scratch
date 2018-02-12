@@ -1,7 +1,9 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.19;
 
-contract Zydecoin {
-    function Zydecoin(){
+import 'zeppelin-solidity/contracts/token/ERC20/MintableToken.sol';
 
-    }
+contract Zydecoin is MintableToken {
+    string public name = "Zydecoin";
+    string public symbol = "ZYC";
+    uint public decimals = 2;
 }

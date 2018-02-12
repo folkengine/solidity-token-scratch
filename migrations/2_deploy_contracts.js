@@ -1,7 +1,7 @@
-var PillarTechnologyCoin = artifacts.require("./PillarTechnologyCoin");
-var PTCWagers = artifacts.require("./PTCWagers.sol");
+var Zydecoin = artifacts.require("./Zydecoin.sol");
+var Scratch = artifacts.require("./Scratch.sol");
 
 module.exports = function(deployer) {
-    deployer.deploy(PillarTechnologyCoin);
-    deployer.deploy(PTCWagers);
+    deployer.deploy(Zydecoin).then(function(){
+        deployer.deploy(Scratch, Zydecoin.address)});
 };
