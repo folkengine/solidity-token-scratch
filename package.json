@@ -1,0 +1,24 @@
+{
+  "name": "solidity-token-scratch",
+  "version": "1.0.0",
+  "description": "Fun with custom ER20 Ethereum Tokens in Solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folkengine/solidity-token-scratch.git"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "truffle"
+  ],
+  "author": "Christoph",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/folkengine/solidity-token-scratch/issues"
+  },
+  "homepage": "https://github.com/folkengine/solidity-token-scratch#readme"
+}
